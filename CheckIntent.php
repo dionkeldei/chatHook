@@ -4,7 +4,7 @@ include "Responses.php";
 class CheckIntent extends Responses {
     
     static function InputUnknown($update){
-        if($update["queryResult"]["outputContexts"][0]["parameters"]["no-match"] >= 3){
+        if($update["queryResult"]["outputContexts"][0]["parameters"]["no-match"] >= 1){
         
         }else{
         $response = CheckIntent::defaultResponses();
